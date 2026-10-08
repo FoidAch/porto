@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoidAch — Developer &amp; Student</title>
+    <meta
+      name="description"
+      content="FoidAch is a developer learning in public. Building with TypeScript, JavaScript, and C# - one commit at a time.">
+    <meta name="author" content="FoidAch">
+    <meta name="theme-color" content="#08090a">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FoidAch - Developer &amp; Student">
+    <meta
+      property="og:description"
+      content="Learning in public. Building with TypeScript, JavaScript, and C#.">
+    <meta property="og:url" content="https://github.com/FoidAch">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Applied before first paint to avoid a theme flash -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("portfolio-theme");
+          if (saved) {
+            document.documentElement.setAttribute("data-theme", saved);
+          } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+            document.documentElement.setAttribute("data-theme", "light");
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "FoidAch",
+        "jobTitle": "Developer & Student",
+        "url": "https://github.com/FoidAch",
+        "sameAs": ["https://github.com/FoidAch"],
+        "knowsAbout": ["TypeScript", "JavaScript", "C#", "HTML", "CSS", "Git"]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ================= Nav ================= -->
+    <header class="nav" id="nav">
+      <div class="container container-wide">
+        <nav class="nav-inner" aria-label="Main navigation">
+          <a class="nav-brand" href="index.html" aria-label="Home">
+            <span class="nav-mark" data-bind="monogram" aria-hidden="true">FA</span>
+            <span data-bind="name">FoidAch</span>
+          </a>
+
+          <div class="nav-links" id="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </div>
+
+          <div class="nav-actions">
+            <button
+              class="theme-toggle"
+              id="theme-toggle"
+              type="button"
+              aria-label="Switch theme"
+              aria-pressed="true"
+            >
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+              </svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" />
+              </svg>
+            </button>
+
+            <a class="btn btn-primary" href="contact.html">
+              Get in touch
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+            </a>
+
+            <button
+              class="nav-toggle"
+              id="nav-toggle"
+              type="button"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+              aria-controls="nav-links"
+            >
+              <span class="nav-toggle-bars" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ================= Hero ================= -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-inner">
+            <span class="status-chip">
+              <span class="status-dot" aria-hidden="true"></span>
+              Open to learning &amp; collaboration
+            </span>
+
+            <h1 class="hero-title">
+              <span class="line"><span class="hero-word">Learning</span> <span class="hero-word">to</span> <span class="hero-word">build</span></span>
+              <span class="line"><span class="hero-word">one</span> <span class="hero-word">commit</span> <span class="hero-word">at</span> <span class="hero-word">a</span> <span class="hero-word">time.</span></span>
+            </h1>
+
+            <p class="hero-lede">
+              I&rsquo;m a developer learning in public. Every repository here started as
+              curiosity and turned into something I use. I care about clean code,
+              honest learning notes, and shipping small things often.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary btn-lg" href="projects.html">
+                View projects
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+              </a>
+              <a class="btn btn-secondary btn-lg" href="https://github.com/FoidAch" target="_blank" rel="noopener noreferrer">
+                GitHub profile
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><path d="M15 3h6v6" /><path d="M10 14 21 3" /></svg>
+              </a>
+            </div>
+
+            <p class="hero-meta">
+              <span data-bind="role">Learning in public, building along the way</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Stats ================= -->
+      <section class="section-flush section">
+        <div class="container">
+          <div class="stats" data-stats></div>
+        </div>
+      </section>
+
+      <!-- ================= Selected work ================= -->
+      <section class="section-flush section" id="work">
+        <div class="container">
+          <header class="section-header">
+            <span class="eyebrow">Selected work</span>
+            <h2>Things I&rsquo;ve been building</h2>
+            <p>
+              Projects from my GitHub - a mix of polished work and honest
+              experiments. Every one of them started as something I wanted to
+              learn.
+            </p>
+          </header>
+
+          <div class="project-grid" data-project-grid="featured"></div>
+
+          <div class="section-cta">
+            <a class="btn btn-secondary" href="projects.html">
+              See all projects
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Marquee ================= -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" data-marquee></div>
+      </div>
+
+      <!-- ================= Skills ================= -->
+      <section class="section" id="skills">
+        <div class="container">
+          <header class="section-header">
+            <span class="eyebrow">Toolkit</span>
+            <h2>What I&rsquo;m working with</h2>
+            <p>
+              Tools are only as good as the judgment behind them. Here&rsquo;s where
+              I am right now.
+            </p>
+          </header>
+
+          <div class="skill-grid" data-skills></div>
+        </div>
+      </section>
+
+      <!-- ================= CTA ================= -->
+      <section class="section-flush section">
+        <div class="container">
+          <div class="cta-band reveal">
+            <h2>Let&rsquo;s build something <span class="gradient-text">worth shipping</span></h2>
+            <a class="btn btn-primary btn-lg" href="contact.html">
+              Start a conversation
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" /></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="footer">
+      <div class="container container-wide">
+        <div class="footer-inner">
+          <div class="footer-meta">
+            &copy; <span data-year>2026</span> <span data-bind="name">FoidAch</span> &mdash; Built from scratch, no frameworks.
+          </div>
+          <div class="footer-socials" data-footer-socials></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
